@@ -12,6 +12,7 @@ function farmaco(event) {
 	Ti.API.info(selectedFarmaco.get('NombreComercial'));
 }
 
+
 function peso(event) {
 	var peso=$.Peso.getValue();
 	Ti.API.info(peso);
