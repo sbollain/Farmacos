@@ -1,0 +1,20 @@
+".container": {
+	backgroundColor:"white",
+	layout: "vertical"
+}
+
+"#Farmaco": {
+	//width: Ti.UI.SIZE,
+	//height: Ti.UI.SIZE,
+	color: "#000",
+	font: {
+		fontSize: 12
+	}
+}
+	
+"#Fila": {
+	color: "#000",
+	font: {
+		fontSize: 12
+	}
+}
