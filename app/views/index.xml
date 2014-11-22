@@ -14,13 +14,21 @@
         	</TableViewRow>
         	<TableViewRow>
 				<View layout="horizontal">
-					<Label text="Introduzca el peso en kg: " width="50%"></Label>
-					<TextField id="Peso" value="10" onChange="peso" keyboardType="TI.UI.KEYBOARD_NUMBER_PAD" width="50%" ></TextField>
+					<Label text="Introduzca el peso en kg: " width="70%"></Label>
+					<TextField id="Peso" value="10" onChange="peso" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
         		</View>
         	</TableViewRow>
         	<TableViewRow>
         		<View layout="horizontal">
-        			<Label id="RangoTerap" left="0%" text="Rango terapeútico en μg/Kg/min: 2-30" ></Label>	
+        			<Label text="Rango terapeútico en μg/Kg/min: " width="72%" ></Label>	
+        			<Label id="RangoTerap" text="2-30" width="28%" ></Label>	
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        		<View layout="horizontal">
+        			<Label text="Dosis terapeútica en μg/Kg/min: " width="70%"></Label>
+					<TextField id="Dosis" value="2" onChange="dosis" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
+        			
         		</View>
         	</TableViewRow>
         	<TableViewRow>
