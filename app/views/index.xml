@@ -1,21 +1,31 @@
 <Alloy>
 	<Collection src="Farmacos"/>
-	<Window class="container" onClose="cleanup" >
+	<Window class="container" layout="vertical" onClose="cleanup" >
 		<TableView>
 			<TableViewRow>
 				<View layout="horizontal">
-					<Label id="Fila" text="Seleccione el fármaco: " width="50%"></Label>
-					<Picker class="picker" onChange="farmaco" >
+					<Label text="Seleccione el fármaco: " width="50%"></Label>
+					<Picker onChange="farmaco" class="picker" >
 						<PickerColumn dataCollection="Farmacos" width="50%" >
-        	    			<PickerRow id="Fila" title="{Farmaco}" ></PickerRow>
+        	    			<PickerRow title="{Farmaco}" ></PickerRow>
       	  				</PickerColumn>
         			</Picker>
         		</View>
         	</TableViewRow>
         	<TableViewRow>
 				<View layout="horizontal">
-					<Label id="Fila" text="Introduzca el peso en kg: " width="50%"></Label>
+					<Label text="Introduzca el peso en kg: " width="50%"></Label>
 					<TextField id="Peso" value="10" onChange="peso" keyboardType="TI.UI.KEYBOARD_NUMBER_PAD" width="50%" ></TextField>
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        		<View layout="horizontal">
+        			<Label id="RangoTerap" left="0%" text="Rango terapeútico en μg/Kg/min: 2-30" ></Label>	
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        		<View layout="horizontal">
+        		 	<ImageView image="/images/logo.png" />
         		</View>
         	</TableViewRow>
         </TableView>
