@@ -15,20 +15,40 @@
         	<TableViewRow>
 				<View layout="horizontal">
 					<Label text="Introduzca el peso en kg: " width="70%"></Label>
-					<TextField id="Peso" value="10" onChange="peso" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
+					<TextField id="Peso" onChange="peso" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
         		</View>
         	</TableViewRow>
         	<TableViewRow>
         		<View layout="horizontal">
         			<Label text="Rango terapeútico en μg/Kg/min: " width="72%" ></Label>	
-        			<Label id="RangoTerap" text="2-30" width="28%" ></Label>	
+        			<Label id="RangoTerap" width="28%" ></Label>	
         		</View>
         	</TableViewRow>
         	<TableViewRow>
         		<View layout="horizontal">
         			<Label text="Dosis terapeútica en μg/Kg/min: " width="70%"></Label>
-					<TextField id="Dosis" value="2" onChange="dosis" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
-        			
+					<TextField id="Dosis" onChange="dosis" keyboardType="TI.UI.KEYBOARD_DECIMAL_PAD" width="30%" ></TextField>
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        		<View layout="horizontal">
+        			<Label id="VolDilT" width="72%" ></Label>	
+        			<Label id="VolDil" width="28%" ></Label>	
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        	</TableViewRow>
+        	<TableViewRow>
+        		<View layout="horizontal">
+        			<Label text="Fármaco a añadir en mg: " width="72%" ></Label>	
+        			<Label id="FarmacoA" width="28%" ></Label>	
+        		</View>
+        	</TableViewRow>
+        	<TableViewRow>
+        	<View layout="horizontal">
+					<Label text="Concentración multiplicada por: " width="70%"></Label>
+					<Picker id="Concentracion" class="picker" >
+        			</Picker>
         		</View>
         	</TableViewRow>
         	<TableViewRow>
