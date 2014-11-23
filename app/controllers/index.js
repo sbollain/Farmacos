@@ -40,6 +40,36 @@ function pantalla(selectedFarmaco){ //funcion para modificar los valores de la p
 	$.FarmacoA.setText(farmacoA);
 	
 	concentracionM=selectedFarmaco.get('MaxConcentr');
+	var visible[10]=true;
+	Ti.API.info("Visible: " + visible[4]);
+	if (concentracionM<10){
+		$.tit10.setVisible(false);
+	}
+	if (concentracionM<9){
+		$.tit9.setVisible(false);
+	}
+	if (concentracionM<8){
+		$.tit8.setVisible(false);
+	}
+	if (concentracionM<7){
+		$.tit7.setVisible(false);
+	}
+	if (concentracionM<6){
+		$.tit6.setVisible(false);
+	}
+	if (concentracionM<5){
+		$.tit5.setVisible(false);
+	}
+	if (concentracionM<4){
+		$.tit4.setVisible(false);
+	}
+	if (concentracionM<3){
+		$.tit3.setVisible(false);
+	}
+	if (concentracionM<2){
+		$.tit2.setVisible(false);
+	}
+	$.Concentracion.setSelectedRow(0,0);
 }
 
 function farmaco(event) {
