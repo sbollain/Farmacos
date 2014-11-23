@@ -40,8 +40,7 @@ function pantalla(selectedFarmaco){ //funcion para modificar los valores de la p
 	$.FarmacoA.setText(farmacoA);
 	
 	concentracionM=selectedFarmaco.get('MaxConcentr');
-	var visible[10]=true;
-	Ti.API.info("Visible: " + visible[4]);
+	Ti.API.info("Concentración Máxima: " + concentracionM);
 	if (concentracionM<10){
 		$.tit10.setVisible(false);
 	}
